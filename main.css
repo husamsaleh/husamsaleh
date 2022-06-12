@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Calibri, sans-serif !important;
+  color: rgb(255, 255, 255);
+}
+
+html {
+  --scrollbarBG: #000000;
+  --thumbBG: #ffffff;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar {
+  width: auto;
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border: 3px solid var(--scrollbarBG);
+}
+
+::-moz-selection {
+  width: 100%;
+  color: orange;
+  background-color: rgb(43, 42, 42);
+}
+
+::selection {
+  width: 100%;
+  color: orange;
+  background-color: rgb(43, 42, 42);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-align: start;
+}
+
+p:hover {
+  cursor: crosshair;
+}
+
+body {
+  position: relative;
+  background-color: black !important;
+}
+body .navb {
+  padding-top: 20px;
+  z-index: 11111;
+  height: auto;
+  width: 100% !important;
+  position: fixed;
+  background: rgb(0, 0, 0);
+  padding-top: 20px;
+  padding-bottom: 0 !important;
+}
+body .navb h1 {
+  font-size: 3rem;
+}
+body .navb h1:hover {
+  color: orange;
+  cursor: pointer;
+  -webkit-transition: 1s color ease-in-out;
+  transition: 1s color ease-in-out;
+}
+body .navb a {
+  position: relative;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 32px;
+  margin-left: 8px;
+}
+body .navb a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: orange;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+body .navb a:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+body .navx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+body #about img {
+  border: 10px white double;
+}
+body .aboutme {
+  position: relative;
+}
+body .skills {
+  position: relative;
+}
+body .skills img {
+  border: 10px white double;
+}
+body .skills li {
+  position: relative;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+}
+body .skills li:hover {
+  color: orange;
+}
+body .wtsnext {
+  position: relative;
+  padding-top: 150px;
+}
+body .twoimgs {
+  height: auto;
+  padding-bottom: 200px;
+}
+body .twoimgs img {
+  height: 100%;
+}
+body .wd {
+  padding-top: 150px;
+}
+body .wd a {
+  color: orange;
+  text-decoration: none;
+}
+body .wd a:hover {
+  color: white;
+}
+body .offcanvas {
+  background: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0)), to(rgb(45, 45, 45)));
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(45, 45, 45));
+  border-left: 5px white double;
+}
+body .offcanvas * {
+  color: rgb(0, 0, 0) !important;
+  list-style: none;
+}
+body .offcanvas p {
+  color: orange !important;
+}
+body .offcanvas a,
+body .offcanvas h5 {
+  color: rgb(255, 255, 255) !important;
+}
+body .brah {
+  -webkit-animation-name: xd;
+          animation-name: xd;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  padding: 0 5px;
+}
+body .brah:hover {
+  background-color: rgba(255, 179, 0, 0.756) !important;
+}
+@-webkit-keyframes xd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  50% {
+    -webkit-transform: scale(1.7);
+            transform: scale(1.7);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes xd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  50% {
+    -webkit-transform: scale(1.7);
+            transform: scale(1.7);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+body .demo a {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+body .demo a:hover {
+  opacity: 0.5;
+}
+body #section05 a {
+  padding-top: 70px;
+}
+body #section05 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb05 1.5s infinite;
+  animation: sdb05 1.5s infinite;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+@-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+            transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+            transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  .aboutme img {
+    height: 400px;
+    width: 300px;
+  }
+
+  #wtsnext {
+    padding-top: 100px;
+  }
+
+  .sig {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  #section05 {
+    display: none;
+  }
+
+  .navb {
+    width: 100%;
+    border-top: 1px orange solid;
+    left: 0;
+    bottom: 0;
+  }
+  .navb .hz1 {
+    display: none;
+  }
+
+  body .aboutme {
+    position: relative;
+  }
+  body .aboutme img {
+    width: 100%;
+    height: 100%;
+  }
+  body .offcanvas {
+    width: 100%;
+  }
+
+  .hz2 {
+    position: absolute;
+    left: 50%;
+    top: 2%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 3rem;
+  }
+}
+@media (min-width: 700px) {
+  body .navx a {
+    margin-left: 20px;
+  }
+  body .aboutme {
+    height: 100vh;
+    width: 100%;
+    padding-top: 150px;
+  }
+  body .aboutme p {
+    width: 50%;
+  }
+  body .skills {
+    width: 100%;
+    height: 100vh;
+  }
+  body .offcanvas {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+@media (max-width: 500px) {
+  .skills {
+    padding-top: 40px;
+  }
+
+  .twoimgs img {
+    width: 84px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
