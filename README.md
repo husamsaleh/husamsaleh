@@ -10,4 +10,4 @@ I developed this project in 2020 as part of my initial foray into front-end deve
 
 I hope that by sharing my journey, others will be inspired to persevere in their learning paths. The progression evident in my projects serves as a testament to the fact that mastery requires dedication and hard work. I encourage everyone to embrace the challenges of learning, as the rewards are substantial and fulfilling.
 
-https://husamsaleh.github.io/husamsaleh/)
+https://husamsaleh.github.io/husamsaleh/
