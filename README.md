@@ -1,6 +1,6 @@
 ## Introduction
 
-Welcome to the repository for one of my first websites, which also serves as my portfolio. This website was constructed using HTML, CSS, and JavaScript.
+Welcome to the git repository for one of my first websites, which also serves as my portfolio. This website was constructed using HTML, CSS, and JavaScript.
 
 ### Project Background
 
